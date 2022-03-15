@@ -167,14 +167,23 @@
 
     <!-- work -->
     <section id="work" class="section">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn">ALL<span class="catrgory__count">6</span>></button>
-        <button class="category__btn">Fornt-end<span class="catrgory__count">4</span>></button>
-        <button class="category__btn">Back-end<span class="catrgory__count">1</span>></button>
-        <button class="category__btn">Mobile<span class="catrgory__count">1</span>></button>
-      </div>
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All <span class="category__count">8</span>
+          </button>
+          <button class="category__btn" data-filter="front-end">
+            Front-end <span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="back-end">
+            Back-end <span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="mobile">
+            Mobile <span class="category__count">2</span>
+          </button>
+        </div>
       <div class="work__projects">
         <a href="https://github.com/qkrsh" class="project" target="_blank">
           <img class="project__img" src="img/Projects/10000hours.png" alt="10000hours">
@@ -205,6 +214,7 @@
           </div>
         </a>
       </div>
+    </div>
     </section>
 
     <!-- contact -->

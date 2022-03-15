@@ -55,6 +55,13 @@
       padding-left: 0;
   }
 
+  button{
+      background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
   /* Typography */
   h1 {
     font-size: var(--font-large);
@@ -88,7 +95,7 @@
   #navbar{
       display: flex;
       justify-content: space-between;
-      background-color: var(--color-pink);
+      background-color: #269BAF;
       align-items: center;
       color: var(--color-white);
       padding: 16px;
@@ -102,7 +109,6 @@
   .navbar__logo{
       font-size: var(--font-medium);
       font-weight: var(--weight-semi-bold);
-      
   }
 
   .navbar__menu__item{
@@ -119,5 +125,35 @@
 
 .navbar__menu__item:hover{
     background-color: var(--color-dark-pink);
+    border-radius: var(--size-border-radius);
+}
+
+/* Home */
+#home{
+    background: url("img/background.jpg") center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home__avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #C8FFFF;
+}
+
+.home__title,
+.home__description{
+    color:#004155;
+}
+
+
+.home__contact{
+    font-size: var(--weight-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid #004155;
+    color: #004155;
     border-radius: var(--size-border-radius);
 }

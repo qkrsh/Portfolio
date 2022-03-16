@@ -102,7 +102,9 @@
       color: var(--color-white);
       padding: 16px;
       transition: all var(--animation-duration) ease-in-out;
+      z-index: 1;
   }
+
   #navbar.navbar--dark{
     background-color: #8dc6ec;
     padding:2px;

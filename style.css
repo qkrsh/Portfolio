@@ -107,7 +107,7 @@
 
   #navbar.navbar--dark{
     background-color: #8dc6ec;
-    padding:2px;
+    padding:8px;
   }
 
 
@@ -127,6 +127,9 @@
     border-radius: var(--size-border-radius);
 }
 
+#navbar.naver--dark{
+  padding:16px;
+}
 
 .navbar__menu__item:hover{
     background-color: #135763;
@@ -135,11 +138,10 @@
 .navbar__toggle-btn{
   position: absolute;
   right:32px;
-  top:8px;
+  top:18px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
-  
 }
 
 /* Home */
@@ -162,6 +164,9 @@
     color:#004155;
 }
 
+.home__contact:hover{
+  background-color: var(--color-orange);
+}
 
 .home__contact{
     font-size: var(--weight-regular);
@@ -309,6 +314,7 @@
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
   }
   
   .category__btn.selected,
@@ -333,7 +339,7 @@
     display: inline-block;
     position: relative;
     top: -20px;
-    left: 4px;
+    right: 0px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
   }
@@ -461,13 +467,28 @@
   }
 
   @media screen and (max-width: 768px){
+    :root{
+      /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
+    }
     .navbar__toggle-btn{
       display: block;
+    }
+
+    .section{
+      padding:16px;
+      padding-top: 40px;
     }
 
     #navbar{
       flex-direction: column;
       align-items: flex-start;
+      background-color: #0c4e7a;
     }
 
     .navbar__menu{
@@ -476,10 +497,23 @@
       width: 100%;
       display: none;
     }
+    #navbar.navbar--dark {
+      padding: 16px;
+    }
+    .navbar__menu.open{
+      display: block;
+    }
+
     .about__majors {
       flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 0px;
     }
-  
+    
+    .category__btn{
+      margin:4px 0;
+      width: 100%;
+    }
     .major {
       margin-bottom: 38px;
     }
@@ -492,7 +526,15 @@
       flex-grow: 1;
     }
   
-  
+    .upbutton{
+      font-size:30px;
+      width:50px;
+      height: 50px;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      line-height: 50px;
+    }
   }
 
 

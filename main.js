@@ -13,6 +13,8 @@ document.addEventListener('scroll', ()=>{
     }
 })
 
+
+
 //move to menu
 const navbarMenu = document.querySelector('.navbar__menu');
 
@@ -22,11 +24,18 @@ navbarMenu.addEventListener('click',(event)=>{
     if(link==null){
         return;
     }
-    
+    navbarMenu.classList.remove('open');
     const scrollTo=document.querySelector(link);
     scrollTo.scrollIntoView({behavior:'smooth'});     
 }
 )
+
+//navbar toggle button
+const navbarToggleButton=document.querySelector('.navbar__toggle-btn');
+
+    navbarToggleButton.addEventListener('click',()=>{
+        navbarMenu.classList.toggle('open');
+})
 
 //contact me 
 const contact = document.querySelector('.home__contact');

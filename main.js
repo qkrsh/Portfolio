@@ -43,9 +43,25 @@ const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 
 document.addEventListener('scroll', ()=>{
-       
-    home.style.opacity=1-window.scrollY/homeHeight
-    
+    home.style.opacity=1-window.scrollY/homeHeight 
 }
+)
 
+//Up button
+const upb = document.querySelector('.upbutton');
+
+document.addEventListener('scroll', ()=>{
+    if(window.scrollY>300){
+        upb.classList.add('visible');
+    }
+    else if(window.scrollY<300){
+        upb.classList.remove('visible');
+    }
+}
+)
+
+upb.addEventListener('click', ()=>{
+    const scroll2=document.querySelector('#home');
+    scroll2.scrollIntoView({behavior:'smooth'});    
+}
 )

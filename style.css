@@ -436,6 +436,22 @@
     color:rgb(58, 184, 58);
   }
 
+  /* scroll */
+  .upbutton{
+    position: fixed;
+    bottom:50px;
+    right:50px;
+    font-size: 60px;
+    color: #0c4e7a;
+    opacity:0;
+    transition: opacity 300ms ease-in;
+    pointer-events: none;
+  }
+
+  .upbutton.visible{
+    opacity:1;
+    pointer-events: auto;
+  }
 
   @media screen and (max-width: 768px){
     .navbar__toggle-btn{
@@ -471,5 +487,6 @@
   
   
   }
+
 
 
